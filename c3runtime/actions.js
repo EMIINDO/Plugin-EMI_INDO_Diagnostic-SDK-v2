@@ -7,8 +7,7 @@
             {
                 return;
             }
-            else
-            {};
+        
             const self = this;
             this.EMI_INDO.switchToSettings(function()
             {
@@ -28,8 +27,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.switchToWirelessSettings(success, fail);
 
@@ -52,8 +50,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.switchToMobileDataSettings(success, fail);
 
@@ -76,8 +73,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             if (somePermissionStatus === this.EMI_INDO.permissionStatus.GRANTED, success, fail)
             {
@@ -104,8 +100,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.getPermissionAuthorizationStatus(function(status)
             {
@@ -142,8 +137,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.requestRuntimePermission(function(status)
             {
@@ -179,8 +173,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             var isRequesting = cordova.plugins.diagnostic.isRequestingPermission();
             if (!isRequesting)
@@ -203,8 +196,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.registerPermissionRequestCompleteHandler(success, fail);
 
@@ -228,8 +220,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isDataRoamingEnabled(function(enabled)
             {
@@ -248,8 +239,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isADBModeEnabled(function(enabled)
             {
@@ -268,8 +258,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isDeviceRooted(function(rooted)
             {
@@ -288,8 +277,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isBackgroundRefreshAuthorized(function(authorized)
             {
@@ -308,8 +296,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.getBackgroundRefreshStatus(function(status)
             {
@@ -332,8 +319,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
 
             this.EMI_INDO.getLocationMode(success, fail, function(status)
@@ -363,8 +349,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.requestLocationAuthorization(success, fail, function(status)
             {
@@ -392,8 +377,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.getBluetoothState(function(state)
             {
@@ -414,8 +398,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isBluetoothAvailable(function(available)
             {
@@ -435,8 +418,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isBluetoothEnabled(function(enabled)
             {
@@ -455,8 +437,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isWifiAvailable(function(available)
             {
@@ -476,8 +457,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isWifiEnabled(function(enabled)
             {
@@ -496,8 +476,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.setWifiState(function()
             {
@@ -518,8 +497,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isCameraAvailable(
             {
@@ -544,8 +522,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.isCameraAuthorized(
 
@@ -570,8 +547,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.getRemoteNotificationTypes(function(types)
             {
@@ -603,8 +579,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
 
             this.EMI_INDO.isRemoteNotificationsEnabled(function(enabled)
@@ -625,8 +600,6 @@
             {
                 return;
             }
-            else
-            {};
             const self = this;
             this.EMI_INDO.isMicrophoneAuthorized(function(authorized)
             {
@@ -645,8 +618,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.getMicrophoneAuthorizationStatus(function(status)
             {
@@ -668,8 +640,7 @@
             {
                 return;
             }
-            else
-            {};
+       
             const self = this;
             this.EMI_INDO.requestMicrophoneAuthorization(function(status)
             {
