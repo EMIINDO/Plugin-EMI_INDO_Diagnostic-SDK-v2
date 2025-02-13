@@ -1,0 +1,232 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Diagnostic Plugin",
+  "text": {
+    "plugins": {
+      "emi_indo_diagnostic": {
+        "name": "Diagnostic",
+        "description": "Available modules: LOCATION, BLUETOOTH, WIFI, CAMERA, NOTIFICATIONS, MICROPHONE, CONTACTS, CALENDAR, REMINDERS, MOTION, NFC, EXTERNAL_STORAGE",
+        "help-url": "https://www.construct.net/en/make-games/addons/511/diagnostic/documentation",
+        "properties": {},
+        "aceCategories": {
+          "core  -  android - ios": "core  -  android - ios",
+          "location  -  android - ios": "location  -  android - ios",
+          "bluetooth  -  android - ios": "bluetooth  -  android - ios",
+          "wifi  -  android - ios": "wifi  -  android - ios",
+          "camera  -  android - ios": "camera  -  android - ios",
+          "notifications  -  android - ios": "notifications  -  android - ios",
+          "microphone  -  android - ios": "microphone  -  android - ios",
+          "success response": "success response",
+          "error response": "error response",
+          "custom": "Response"
+        },
+        "conditions": {
+          "core_module": {
+            "list-name": "On Core Module success",
+            "display-text": "On Core Module success",
+            "description": "ANY core module response Successfully"
+          },
+          "core_modulefail": {
+            "list-name": "On Core Module error",
+            "display-text": "On Core Module error",
+            "description": "ANY core module response error"
+          }
+        },
+        "actions": {
+          "switchtosettings": {
+            "list-name": "switch To Settings",
+            "display-text": "switch To Settings",
+            "description": "Opens settings page for this app."
+          },
+          "switchtowirelesssettings": {
+            "list-name": "switch To Wireless Settings",
+            "display-text": "switch To Wireless Settings",
+            "description": "Switches to the wireless settings page in the Settings app. Allows configuration of wireless controls such as Wi-Fi, Bluetooth and Mobile networks."
+          },
+          "switchtomobiledatasettings": {
+            "list-name": "switch To Mobile Data Settings",
+            "display-text": "switch To Mobile Data Settings",
+            "description": "Displays mobile settings to allow user to enable mobile data."
+          },
+          "permissionstatus": {
+            "list-name": "permission Status",
+            "display-text": "permission Status",
+            "description": "Both Android and iOS define constants for requesting and reporting the various permission states."
+          },
+          "getpermissionauthorizationstatus": {
+            "list-name": "get Permission Authorization Status",
+            "display-text": "get Permission Authorization Status",
+            "description": "Returns the current authorisation status for a given permission."
+          },
+          "requestruntimepermission": {
+            "list-name": "request Runtime Permission",
+            "display-text": "request Runtime Permission",
+            "description": "Requests app to be granted authorisation for a runtime permission."
+          },
+          "isrequestingpermission": {
+            "list-name": "is Requesting Permission",
+            "display-text": "is Requesting Permission",
+            "description": "Indicates if the plugin is currently requesting a runtime permission via the native API. Note that only one request can be made concurrently because the native API cannot handle concurrent requests, so the plugin will invoke the error callback if attempting to make more than one simultaneous request. Multiple permission requests should be grouped into a single call since the native API is setup to handle batch requests of multiple permission groups."
+          },
+          "registerpermissionrequestcompletehandler": {
+            "list-name": "register Permission Request Complete Handler",
+            "display-text": "register Permission Request Complete Handler",
+            "description": "Registers a function to be called when a runtime permission request has completed. Pass in a falsey value to de-register the currently registered function."
+          },
+          "isdataroamingenabled": {
+            "list-name": "is Data Roaming Enabled",
+            "display-text": "is Data Roaming Enabled",
+            "description": "Checks if the device data roaming setting is enabled. Returns true if data roaming is enabled."
+          },
+          "isadbmodeenabled": {
+            "list-name": "is ADB Mode Enabled",
+            "display-text": "is ADB Mode Enabled",
+            "description": "cordova.plugins.diagnostic.isADBModeEnabled(function(enabled){"
+          },
+          "isdevicerooted": {
+            "list-name": "is Device Rooted",
+            "display-text": "is Device Rooted",
+            "description": "Checks if the device is rooted. Returns true if the device is rooted."
+          },
+          "isbackgroundrefreshauthorized": {
+            "list-name": "is Background Refresh Authorized",
+            "display-text": "is Background Refresh Authorized",
+            "description": "Checks if the application is authorized for background refresh."
+          },
+          "getbackgroundrefreshstatus": {
+            "list-name": "get Background Refresh Status",
+            "display-text": "get Background Refresh Status",
+            "description": "Returns the background refresh authorization status for the application."
+          },
+          "locationmode": {
+            "list-name": "Location mode",
+            "display-text": "Location mode ([b]{0}[/b]).",
+            "description": "SDefines constants for the various location modes on Android.",
+            "params": {
+              "lm1": {
+                "name": "Values :",
+                "desc": "HIGH_ACCURACY | BATTERY_SAVING | DEVICE_ONLY | LOCATION_OFF",
+                "items": {
+                  "HIGH_ACCURACY": "HIGH ACCURACY",
+                  "BATTERY_SAVING": "BATTERY SAVING",
+                  "DEVICE_ONLY": "DEVICE ONLY",
+                  "LOCATION_OFF": "LOCATION OFF"
+                }
+              }
+            }
+          },
+          "locationauthorizationmode": {
+            "list-name": "Location authorization mode",
+            "display-text": "Location authorization mode ([b]{0}[/b]).",
+            "description": "Defines constants for the various location authorization modes on iOS and Android >= 10.",
+            "params": {
+              "lm2": {
+                "name": "Values :",
+                "desc": "ALWAYS | WHEN_IN_USE"
+              }
+            }
+          },
+          "getbluetoothstate": {
+            "list-name": "Get bluetooth state",
+            "display-text": "Get bluetooth state ([b]{0}[/b], [b]{1}[/b]).",
+            "description": "Defines constants for the various Bluetooth hardware states",
+            "params": {
+              "an": {
+                "name": "Android Values :",
+                "desc": "UNKNOWN | POWERED_OFF | POWERED_ON | POWERING_OFF | POWERING_ON"
+              },
+              "is": {
+                "name": "IOS Values :",
+                "desc": "UNKNOWN | RESETTING | OWERED_OFF | POWERED_ON | UNAUTHORIZED"
+              }
+            }
+          },
+          "isbluetoothavailable": {
+            "list-name": "Is bluetooth available",
+            "display-text": "Is bluetooth available",
+            "description": "Platforms: Android, iOS and Windows 10 UWP"
+          },
+          "isbluetoothenabled": {
+            "list-name": "Is bluetooth enabled",
+            "display-text": "is Bluetooth Enabled",
+            "description": "Checks if the device setting for Bluetooth is switched on."
+          },
+          "iswifiavailable": {
+            "list-name": "Is wifi available",
+            "display-text": "is Wifi Available",
+            "description": "Checks if Wifi is available. On iOS this returns true if the device is connected to a network by WiFi."
+          },
+          "iswifienabled": {
+            "list-name": "Is wifi enabled",
+            "display-text": "is Wifi Enabled",
+            "description": "On iOS this returns true if the WiFi setting is set to enabled (regardless of whether it's connected to a network)."
+          },
+          "setwifistate": {
+            "list-name": "Set wifi state",
+            "display-text": "Set wifi state ([b]{0}[/b]).",
+            "description": "Enables/disables WiFi on the device.",
+            "params": {
+              "wi": {
+                "name": "Param :",
+                "desc": "true | false"
+              }
+            }
+          },
+          "iscameraavailable": {
+            "list-name": "Is camera available",
+            "display-text": "Is camera available ([b]{0}[/b]).",
+            "description": "Checks if camera is available. | On Android & iOS this returns true if the device has a camera AND the application is authorized to use it.",
+            "params": {
+              "ext1": {
+                "name": "external Storage :",
+                "desc": "(Android only) If true, checks permission for READ_EXTERNAL_STORAGE in addition to CAMERA run-time permission. Defaults to true."
+              }
+            }
+          },
+          "isCameraAuthorized": {
+            "list-name": "is Camera Authorized",
+            "display-text": "is Camera Authorized ([b]{0}[/b]).",
+            "description": "Checks if the application is authorized to use the camera. | This is intended for Android 6 / API 23 and above. Calling on Android 5.1 / API 22 and below will always return TRUE as permissions are already granted at installation time.",
+            "params": {
+              "ext2": {
+                "name": "external Storage :",
+                "desc": "(Android only) If true, checks permission for READ_EXTERNAL_STORAGE in addition to CAMERA run-time permission. Defaults to true."
+              }
+            }
+          },
+          "getremotenotificationtypes": {
+            "list-name": "get Remote Notification Types",
+            "display-text": "get Remote Notification Types",
+            "description": "Purpose: Remote notifications functionality"
+          },
+          "isRemoteNotificationsEnabled": {
+            "list-name": "is Remote Notifications Enabled",
+            "display-text": "is Remote Notifications Enabled",
+            "description": "Purpose: Remote notifications functionality"
+          },
+          "ismicrophoneauthorized": {
+            "list-name": "Ismicrophoneauthorized",
+            "display-text": "isMicrophoneAuthorized",
+            "description": "Checks if the application is authorized to use the microphone. |  Notes for Android:  This is intended for Android 6 / API 23 and above. Calling on Android 5.1 / API 22 and below will always return TRUE as permissions are already granted at installation time."
+          },
+          "getmicrophoneauthorizationstatus": {
+            "list-name": "Getmicrophoneauthorizationstatus",
+            "display-text": "getMicrophoneAuthorizationStatus",
+            "description": "Returns the microphone authorization status for the application.  Notes for Android:   This is intended for Android 6 / API 23 and above. Calling on Android 5.1 / API 22 and below will always return GRANTED status as permissions are already granted at installation time."
+          },
+          "requestmicrophoneauthorization": {
+            "list-name": "Requestmicrophoneauthorization",
+            "display-text": "requestMicrophoneAuthorization",
+            "description": "Requests microphone authorization for the application.   Notes for iOS:  Should only be called if authorization status is NOT_REQUESTED. Calling it when in any other state will have no effect and just return the current authorization status."
+          }
+        },
+        "expressions": {
+          "response": {
+            "translated-name": "Response",
+            "description": "This Event response"
+          }
+        }
+      }
+    }
+  }
+}

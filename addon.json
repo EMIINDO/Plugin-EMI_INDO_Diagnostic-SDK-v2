@@ -1,0 +1,34 @@
+{
+  "is-c3-addon": true,
+  "sdk-version": 2,
+  "min-construct-version": "r401",
+  "type": "plugin",
+  "name": "Diagnostic",
+  "id": "EMI_INDO_Diagnostic",
+  "version": "1.0.0.3",
+  "author": "EMI_INDO",
+  "website": "https://c3addon.itch.io/",
+  "documentation": "https://www.construct.net/en/make-games/addons/511/diagnostic/documentation",
+  "description": "Available modules: LOCATION, BLUETOOTH, WIFI, CAMERA, NOTIFICATIONS, MICROPHONE, CONTACTS, CALENDAR, REMINDERS, MOTION, NFC, EXTERNAL_STORAGE",
+  "editor-scripts": [
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ],
+  "file-list": [
+    "c3runtime/main.js",
+    "c3runtime/plugin.js",
+    "c3runtime/type.js",
+    "c3runtime/instance.js",
+    "c3runtime/conditions.js",
+    "c3runtime/actions.js",
+    "c3runtime/expressions.js",
+    "lang/en-US.json",
+    "aces.json",
+    "addon.json",
+    "icon.svg",
+    "instance.js",
+    "plugin.js",
+    "type.js"
+  ]
+}

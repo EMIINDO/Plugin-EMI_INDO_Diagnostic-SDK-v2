@@ -1,0 +1,266 @@
+{
+  "core  -  android - ios": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "switchtosettings",
+        "scriptName": "Switchtosettings",
+        "highlight": false
+      },
+      {
+        "id": "switchtowirelesssettings",
+        "scriptName": "Switchtowirelesssettings",
+        "highlight": false
+      },
+      {
+        "id": "switchtomobiledatasettings",
+        "scriptName": "Switchtomobiledatasettings",
+        "highlight": false
+      },
+      {
+        "id": "permissionstatus",
+        "scriptName": "Permissionstatus",
+        "highlight": false
+      },
+      {
+        "id": "getpermissionauthorizationstatus",
+        "scriptName": "Getpermissionauthorizationstatus",
+        "highlight": false
+      },
+      {
+        "id": "requestruntimepermission",
+        "scriptName": "Requestruntimepermission",
+        "highlight": false
+      },
+      {
+        "id": "isrequestingpermission",
+        "scriptName": "Isrequestingpermission",
+        "highlight": false
+      },
+      {
+        "id": "registerpermissionrequestcompletehandler",
+        "scriptName": "Registerpermissionrequestcompletehandler",
+        "highlight": false
+      },
+      {
+        "id": "isdataroamingenabled",
+        "scriptName": "Isdataroamingenabled",
+        "highlight": false
+      },
+      {
+        "id": "isadbmodeenabled",
+        "scriptName": "Isadbmodeenabled",
+        "highlight": false
+      },
+      {
+        "id": "isdevicerooted",
+        "scriptName": "Isdevicerooted",
+        "highlight": false
+      },
+      {
+        "id": "isbackgroundrefreshauthorized",
+        "scriptName": "Isbackgroundrefreshauthorized",
+        "highlight": false
+      },
+      {
+        "id": "getbackgroundrefreshstatus",
+        "scriptName": "Getbackgroundrefreshstatus",
+        "highlight": false
+      }
+    ],
+    "expressions": []
+  },
+  "location  -  android - ios": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "locationmode",
+        "scriptName": "Locationmode",
+        "highlight": false,
+        "params": [
+          {
+            "id": "lm1",
+            "type": "combo",
+            "items": [
+              "HIGH_ACCURACY",
+              "BATTERY_SAVING",
+              "DEVICE_ONLY",
+              "LOCATION_OFF"
+            ],
+            "initialValue": "HIGH_ACCURACY"
+          }
+        ]
+      },
+      {
+        "id": "locationauthorizationmode",
+        "scriptName": "Locationauthorizationmode",
+        "highlight": false,
+        "params": [
+          {
+            "id": "lm2",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "bluetooth  -  android - ios": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "getbluetoothstate",
+        "scriptName": "Getbluetoothstate",
+        "highlight": false,
+        "params": [
+          {
+            "id": "an",
+            "type": "string"
+          },
+          {
+            "id": "is",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "isbluetoothavailable",
+        "scriptName": "Isbluetoothavailable",
+        "highlight": false
+      },
+      {
+        "id": "isbluetoothenabled",
+        "scriptName": "Isbluetoothenabled",
+        "highlight": false
+      }
+    ],
+    "expressions": []
+  },
+  "wifi  -  android - ios": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "iswifiavailable",
+        "scriptName": "Iswifiavailable",
+        "highlight": false
+      },
+      {
+        "id": "iswifienabled",
+        "scriptName": "Iswifienabled",
+        "highlight": false
+      },
+      {
+        "id": "setwifistate",
+        "scriptName": "Setwifistate",
+        "highlight": false,
+        "params": [
+          {
+            "id": "wi",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "camera  -  android - ios": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "iscameraavailable",
+        "scriptName": "Iscameraavailable",
+        "highlight": false,
+        "params": [
+          {
+            "id": "ext1",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "isCameraAuthorized",
+        "scriptName": "Iscameraauthorized",
+        "highlight": false,
+        "params": [
+          {
+            "id": "ext2",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "notifications  -  android - ios": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "getremotenotificationtypes",
+        "scriptName": "Getremotenotificationtypes",
+        "highlight": false
+      },
+      {
+        "id": "isRemoteNotificationsEnabled",
+        "scriptName": "Isremotenotificationsenabled",
+        "highlight": false
+      }
+    ],
+    "expressions": []
+  },
+  "microphone  -  android - ios": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "ismicrophoneauthorized",
+        "scriptName": "Ismicrophoneauthorized",
+        "highlight": false
+      },
+      {
+        "id": "getmicrophoneauthorizationstatus",
+        "scriptName": "Getmicrophoneauthorizationstatus",
+        "highlight": false
+      },
+      {
+        "id": "requestmicrophoneauthorization",
+        "scriptName": "Requestmicrophoneauthorization",
+        "highlight": false
+      }
+    ],
+    "expressions": []
+  },
+  "success response": {
+    "conditions": [
+      {
+        "id": "core_module",
+        "scriptName": "Core_Module",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [],
+    "expressions": []
+  },
+  "error response": {
+    "conditions": [
+      {
+        "id": "core_modulefail",
+        "scriptName": "Core_Modulefail",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [],
+    "expressions": []
+  },
+  "custom": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "response",
+        "expressionName": "Response",
+        "returnType": "any"
+      }
+    ]
+  }
+}
